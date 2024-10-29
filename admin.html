@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div class="bg-cyan-800 text-gray-200 w-64 p-6">
+            <h2 class="text-2xl font-semibold mb-8">Admin Dashboard</h2>
+            <ul>
+                <li class="mb-4"><a href="#" class="text-gray-400 hover:text-white">Dashboard</a></li>
+                <li class="mb-4"><a href="#" class="text-gray-400 hover:text-white">Users</a></li>
+                <li class="mb-4"><a href="#" class="text-gray-400 hover:text-white">Settings</a></li>
+                <li class="mb-4"><a href="#" class="text-gray-400 hover:text-white">Logout</a></li>
+            </ul>
+        </div>
+        
+        <!-- Main content -->
+        <div class="flex-1 p-10">
+            <h1 class="text-3xl font-bold mb-6 text-cyan-800">Welcome to Admin Dashboard</h1>
+            <div class="grid grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                    <h3 class="text-xl font-semibold text-cyan-700">Total Users</h3>
+                    <p class="text-gray-600 mt-2">1000</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                    <h3 class="text-xl font-semibold text-cyan-700">Active Sessions</h3>
+                    <p class="text-gray-600 mt-2">150</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                    <h3 class="text-xl font-semibold text-cyan-700">Pending Tasks</h3>
+                    <p class="text-gray-600 mt-2">20</p>
+                </div>
+            </div>
+            <div class="mt-10">
+                <h2 class="text-2xl font-semibold mb-4 text-cyan-800">Recent Activity</h2>
+                <table class="min-w-full bg-white border border-gray-200">
+                    <thead>
+                        <tr>
+                            <th class="py-2 px-4 border-b text-left text-cyan-700">Activity</th>
+                            <th class="py-2 px-4 border-b text-left text-cyan-700">User</th>
+                            <th class="py-2 px-4 border-b text-left text-cyan-700">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-gray-100">
+                            <td class="py-2 px-4 border-b">User Created</td>
+                            <td class="py-2 px-4 border-b">John Doe</td>
+                            <td class="py-2 px-4 border-b">2024-10-06</td>
+                        </tr>
+                        <tr class="hover:bg-gray-100">
+                            <td class="py-2 px-4 border-b">User Logged In</td>
+                            <td class="py-2 px-4 border-b">Jane Smith</td>
+                            <td class="py-2 px-4 border-b">2024-10-05</td>
+                        </tr>
+                        <tr class="hover:bg-gray-100">
+                            <td class="py-2 px-4 border-b">Task Completed</td>
+                            <td class="py-2 px-4 border-b">Alice Brown</td>
+                            <td class="py-2 px-4 border-b">2024-10-04</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
